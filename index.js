@@ -158,7 +158,7 @@ const commands = [
     }
 ];
 //REST API Yapılandırmasını Tanımlıyoruz
-const rest = new REST({ version: '10' }).setToken(token);
+const rest = new REST({ version: '10' }).setToken(TOKEN);
 
 //Deneme Süreci Yönetim Fonksiyonunu Tanımlıyoruz
 async function denemeYonetimi(guild, user) {

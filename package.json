@@ -1,0 +1,20 @@
+{
+  "name": "basvuru-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Hewo",
+  "license": "ISC",
+  "description": "Hewo Başvuru Botu...İzin Alınmadan Paylaşılamaz.",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^2.4.0",
+    "croxydb": "^0.0.26",
+    "discord.js": "^14.16.3",
+    "fs": "^0.0.1-security",
+    "https-proxy-agent": "^7.0.5",
+    "moment": "^2.29.4"
+  }
+}

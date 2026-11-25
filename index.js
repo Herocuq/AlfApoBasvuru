@@ -1,9 +1,21 @@
 //Discord.js ve Gerekli Modülleri Tanımlıyoruz
 const { Client, Collection, GatewayIntentBits, Partials, ModalBuilder, ActionRowBuilder, TextInputBuilder, TextInputStyle, EmbedBuilder, ButtonStyle, ButtonBuilder, PermissionsBitField, ActivityType } = require("discord.js");
-const { token, owner_id } = require("./config.js");
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v10');
 const fdb = require("croxydb");
+
+const express = require("express");
+
+const app = express();
+
+app.use((req, res) => {
+  res.status(200).send("Bot 7/24 Aktif!");
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Web sunucusu ${PORT} portunda aktif.`);
+});
 
 //Bot İçin Gerekli İntentleri Tanımlıyoruz
 const client = new Client({

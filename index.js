@@ -4,6 +4,8 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v10');
 const fdb = require("croxydb");
 
+const owner_id = process.env.owner_id;
+
 const express = require("express");
 
 const app = express();
